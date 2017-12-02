@@ -8,13 +8,12 @@ $colors: gray red orange yellow green teal blue indigo purple pink
 /// -----------------------------------
 /// 3D buttons
 /// -----------------------------------
+@each $color in $colors {
+  .btn-3d-{$color} {
+    @apply .tw-bg-{$color} .tw-text-white .tw-font-bold tw-py-2 .tw-px-4 .tw-border-b-4 .tw-border-{$color}-dark .tw-rounded;
+  }
 
- @each $color in $colors {
-   .btn-3d-{$color} {
-     @apply .tw-bg-{$color} .tw-text-white .tw-font-bold tw-py-2 .tw-px-4 .tw-border-b-4 .tw-border-{$color}-dark .tw-rounded;
-   }
-
-   &:hover {
+  &:hover {
     @apply .tw-bg-{$color}-light .tw-border-{$color};
   }
- }
+}
