@@ -1,0 +1,7 @@
+.tw-btn-3d-blue {
+  @apply .tw-bg-blue .tw-text-white .tw-font-bold .tw-py-2 .tw-px-4 .tw-border-b-4 .tw-border-blue-dark .tw-rounded;
+
+  &:hover {
+    @apply .tw-bg-blue-light .tw-border-blue;
+  }
+}

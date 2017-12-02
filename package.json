@@ -1,0 +1,27 @@
+{
+  "name": "activisme-css-framework",
+  "version": "1.0.0",
+  "description": "A small css framework for our activism platforms",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [
+    "Tailwind",
+    "CSS",
+    "Bootstrap"
+  ],
+  "author": "Tim Joosten",
+  "license": "MIT",
+  "dependencies": {
+    "laravel-mix": "^1.6.2",
+    "tailwindcss": "^0.3.0"
+  },
+  "devDependencies": {
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0"
+  }
+}
