@@ -3,14 +3,18 @@
 /// This module provide buttons for the following color.
 /// gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
 
+$colors: gray red orange yellow green teal blue indigo purple pink
+
 /// -----------------------------------
 /// 3D buttons
 /// -----------------------------------
 
-.tw-btn-3d-blue {
-  @apply .tw-bg-blue .tw-text-white .tw-font-bold .tw-py-2 .tw-px-4 .tw-border-b-4 .tw-border-blue-dark .tw-rounded;
+ @each $color in $colors {
+   .btn-3d-{$color} {
+     @apply .tw-bg-{$color} .tw-text-white .tw-font-bold tw-py-2 .tw-px-4 .tw-border-b-4 .tw-border-{$color}-dark .tw-rounded;
+   }
 
-  &:hover {
-    @apply .tw-bg-blue-light .tw-border-blue;
+   &:hover {
+    @apply .tw-bg-{$color}-light .tw-border-{$color};
   }
-}
+ }
