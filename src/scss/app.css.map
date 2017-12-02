@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAaA,mBAAmB;AAEnB;;;;;;;;;;;;;;GAcG;ACpBH,eAAgB;EACd,iHAAiH;EAEjH,qBAAQ;IACN,wCAAwC;;ADmB5C;;;;;;;;;GASG;AACH,mBAAmB;AAEnB;;;;;;;;;;;;;GAaG",
-"sources": ["app.scss","_components/buttons.scss"],
-"names": [],
-"file": "app.css"
-}
